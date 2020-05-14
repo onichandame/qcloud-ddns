@@ -1,9 +1,9 @@
 #!/bin/sh
 
-domain='onichandame.com'
-subDomain='home'
-sId='AKID3gHxc4fNL9gNp0vX5QWLvEuylLo8rnNc'
-sKey='OgjHlyuYCakeGKRIsE8l8EsTnqfNwITf'
+domain='your domain'
+subDomain='Your subdomain'
+sId='Your secret id'
+sKey='Your secret key'
 signatureMethod='HmacSHA1'
 timestamp=`date +%s`
 nonce=`head -200 /dev/urandom | cksum | cut -f2 -d" "`
