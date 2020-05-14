@@ -1,9 +1,8 @@
 #!/bin/sh
 
-domain='your domain'
-subDomain='Your subdomain'
-sId='Your secret id'
-sKey='Your secret key'
+domain=$DOMAIN
+sId=$SECRET_ID
+sKey=$SECRET_KEY
 signatureMethod='HmacSHA1'
 timestamp=`date +%s`
 nonce=`head -200 /dev/urandom | cksum | cut -f2 -d" "`
